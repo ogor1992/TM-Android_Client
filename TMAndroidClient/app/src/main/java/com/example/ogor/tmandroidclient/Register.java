@@ -1,12 +1,14 @@
 package com.example.ogor.tmandroidclient;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,12 +32,20 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
+
+        Context context = getApplicationContext();
+
         switch(v.getId()) {
             case R.id.registerButtonReg:
                 Intent returnIntentREG = new Intent();
                 //setResult(Activity.RESULT_CANCELED, returnIntent); //przypadek kiedy nie uda sie zalogowac :)
                 setResult(Activity.RESULT_OK, returnIntentREG);
                 finish();
+
+                CharSequence text = "Successfully registered!";
+                int duration = Toast.LENGTH_LONG;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
                 break;
         }
     }
