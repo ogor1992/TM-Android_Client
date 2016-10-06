@@ -20,4 +20,19 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/siginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/imgViewLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_pl"
+        android:layout_marginTop="150dp"/>
+
 </RelativeLayout>

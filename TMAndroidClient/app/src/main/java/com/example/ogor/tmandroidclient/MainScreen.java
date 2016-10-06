@@ -1,5 +1,6 @@
 package com.example.ogor.tmandroidclient;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,11 +10,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainScreen extends AppCompatActivity implements View.OnClickListener {
 
     TextView signInLabel;
+    Button signinButton;
     Toolbar toolbar;
     FloatingActionButton fab;
 
@@ -23,12 +26,13 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_main_screen);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        signinButton = (Button) findViewById(R.id.siginButton);
         signInLabel = (TextView) findViewById(R.id.signInLabel);
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
         setSupportActionBar(toolbar);
 
-        signInLabel.setOnClickListener(this);
+        signinButton.setOnClickListener(this);
         fab.setOnClickListener(this);
     }
 
@@ -42,9 +46,27 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
 
                         //Here we can handle right down corner button :D
                 break;
-            case R.id.signInLabel:
-                startActivity(new Intent(this, Login.class));
+            case R.id.siginButton:
+                Intent intentLOG = new Intent(this, Login.class);
+                startActivityForResult(intentLOG, 1);
                 break;
+        }
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == 1)
+        {
+            if(resultCode == Activity.RESULT_OK)
+            {
+                signInLabel.setText("You are Sign in!");
+            }
+
+            if(resultCode == Activity.RESULT_CANCELED)
+            {
+
+            }
         }
 
     }
@@ -61,12 +83,21 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+       // int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch(item.getItemId())
+        {
+            case R.id.action_settings:
+                startActivity(new Intent(this, Settings.class));
+                break;
+            case R.id.action_logout:
+
+                break;
         }
+
+       // if (id == R.id.action_settings) {
+      ///      return true;
+       // }
 
         return super.onOptionsItemSelected(item);
     }

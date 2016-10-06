@@ -17,7 +17,19 @@
         android:textSize="20dp"/>
 
     <EditText
-        android:id="@+id/usernameLabel"
+        android:id="@+id/usernameLabelReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/emailLabelReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"/>
@@ -29,39 +41,30 @@
         android:textSize="20dp"/>
 
     <EditText
-        android:id="@+id/passwordLabel"
+        android:id="@+id/passwordLabelReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordLabel2Reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"/>
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/registerButtonReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:text="Register"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have account ?"
-        android:layout_marginTop="40dp"
-        android:textSize="20dp"
-        android:layout_gravity="center"/>
 
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/resultLabelFromReg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:textSize="20dp"
-        android:textColor="@color/colorAccent"/>
 
 </LinearLayout>
