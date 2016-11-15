@@ -15,10 +15,9 @@ import android.widget.Toast;
 import com.example.ogor.tmandroidclient.API.Rest_Api;
 import com.example.ogor.tmandroidclient.model.Rest_Model;
 
-import retrofit.Callback;
-import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
+import java.io.IOException;
+import java.util.List;
+import retrofit2.Call;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,7 +27,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     TextView resultFromGSON;
 
     ProgressBar progressBar;
-    String API = ""; /// need to fill this URL -API    /// BASE URL
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,23 +61,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 String user = usernameLabel.getText().toString();
                 progressBar.setVisibility(View.VISIBLE);
 
-                RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(API).build();
-                Rest_Api my_api = restAdapter.create(Rest_Api.class);
-
-                my_api.getFeed(user, new Callback<Rest_Model>() {
-                    @Override
-                    public void success(Rest_Model rest_model, Response response) {
-                        resultFromGSON.setText("User email: " + rest_model.getLoginEmail() + " Password: " + rest_model.getPassword());
-                        progressBar.setVisibility(View.INVISIBLE);
-                    }
-
-                    @Override
-                    public void failure(RetrofitError error) {
-                        resultFromGSON.setText(error.getMessage());
-                        progressBar.setVisibility(View.INVISIBLE);
-                    }
-                });
-
+                Rest_Api restApi = Rest_Api.retrofit.create(Rest_Api.class);
+                Call<List<String>> call = restApi.loginAct(usernameLabel.toString(), passwordLabel.toString());
+                try {
+                    String result1 = call.execute().body().toString();
+                    resultFromGSON.setText(result1);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
 
                 ////////////////////////////////////////////////////////////////////////////////////////
