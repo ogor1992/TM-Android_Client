@@ -5,14 +5,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-public class ShowConsultationStudent extends AppCompatActivity {
+public class ShowConsultationStudent extends AppCompatActivity implements View.OnClickListener {
+
+    Button showListButton_S;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_consultation_student);
+        setTitle("Mobile STT - My Consultation");
+
+        showListButton_S = (Button) findViewById(R.id.showListButton_S);
+        showListButton_S.setOnClickListener(this);
     }
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()) {
+            case R.id.showListButton_S:
+                Intent intentListShow = new Intent(this, ListOfStudents.class);
+                startActivity(intentListShow);
+                break;
+        }
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
