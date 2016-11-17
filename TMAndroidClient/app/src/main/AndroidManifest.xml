@@ -26,12 +26,15 @@
         <activity android:name=".EditUserData" />
         <activity android:name=".Student_screen" />
         <activity android:name=".Teacher_screen" />
-        <activity android:name=".nformation" />
         <activity android:name=".Information" />
         <activity android:name=".ShowUserData" />
         <activity android:name=".AddConsultation" />
         <activity android:name=".ShowConsultation" />
-        <activity android:name=".EditConsultation"></activity>
+        <activity android:name=".EditConsultation" />
+        <activity android:name=".ListOfStudents" />
+        <activity android:name=".SearchTeacher" />
+        <activity android:name=".SearchConsultation" />
+        <activity android:name=".ShowConsultationStudent"></activity>
     </application>
 
 </manifest>

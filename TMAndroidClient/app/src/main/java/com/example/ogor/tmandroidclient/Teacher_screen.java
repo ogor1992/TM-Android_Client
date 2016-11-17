@@ -1,5 +1,6 @@
 package com.example.ogor.tmandroidclient;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,10 @@ public class Teacher_screen extends AppCompatActivity implements View.OnClickLis
         showConsultationButton = (Button) findViewById(R.id.showConsultationButton);
         addConsultationButton = (Button) findViewById(R.id.addConsultationButton);
         editConsultationButton = (Button) findViewById(R.id.editConsultationButton);
+
+        showConsultationButton.setOnClickListener(this);
+        addConsultationButton.setOnClickListener(this);
+        editConsultationButton.setOnClickListener(this);
     }
 
     @Override
