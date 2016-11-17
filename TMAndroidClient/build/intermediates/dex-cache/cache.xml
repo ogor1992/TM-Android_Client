@@ -2,109 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_8c3328ffd63270676f40648a6f10111f7b688181\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_0ed4a778e6807304ed8fdb029a4b458e769a4be4\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_e89056c706032d539cd416ce344bd15d9204e4f3\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_e48dd8799b7fd0e9c31d64590221a46097da532d\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_2c30972513e8581256663528d11d6d1b45b9de22\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_77a0d103eeabf8d304801c7d1c15dd2a19d49481\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.1_0ea31b3fa2951cd89db21be728260f59b41c00ff\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_23bb28af49a2bdf5e708598a085ac59345cc362e\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_d00f8170e40307fa00532271628aba4ff0aeb16f\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_b758c3d61f068ea35d6c26ad0c14cb72a5558182\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="7e6ae7f5741f800a53d7f7beedf8b397daa0d7f8">
+        sha1="39ca3f762ed988f658ea5919f3f6a8112596a011">
         <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9a604e1273cd7443f510a4123f71b76256d60c16\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.2_3eb8ad11ee1298721c7927c89fb7302e52f78920\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_40a7a0838fc69ec407375e3d38d04c29a14c4108\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="7793f78cfb54ac208af3a016edb4985e7cde816a">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1e4c9952c7a96862c77d2c6df3a051b7a53a4e4c\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\OGOR\Documents\ANDROIDprojectTM\TM-Android_Client\TMAndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_4a6b762fb216a3ddb5ba0c724cc38cbf0c1e181e\classes.dex" />
     </item>
 
 </items>

@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ogor.tmandroidclient">
 
-    <uses-permission
-        android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +23,15 @@
         <activity android:name=".Login" />
         <activity android:name=".Settings" />
         <activity android:name=".Register" />
-        <activity android:name=".EditUserData"></activity>
+        <activity android:name=".EditUserData" />
+        <activity android:name=".Student_screen" />
+        <activity android:name=".Teacher_screen" />
+        <activity android:name=".nformation" />
+        <activity android:name=".Information" />
+        <activity android:name=".ShowUserData" />
+        <activity android:name=".AddConsultation" />
+        <activity android:name=".ShowConsultation" />
+        <activity android:name=".EditConsultation"></activity>
     </application>
 
 </manifest>

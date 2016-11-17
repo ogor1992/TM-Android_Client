@@ -1,7 +1,14 @@
 package com.example.ogor.tmandroidclient;
 
-/**
- * Created by OGOR on 2016-11-15.
- */
-public class Information {
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class Information extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_information);
+        setTitle("Mobile STT - Information");
+    }
 }

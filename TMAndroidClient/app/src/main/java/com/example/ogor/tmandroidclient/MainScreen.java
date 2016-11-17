@@ -48,7 +48,7 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
                 break;
             case R.id.siginButton:
                 Intent intentLOG = new Intent(this, Login.class);
-                startActivityForResult(intentLOG, 1);
+                startActivity(intentLOG);
                 break;
         }
 

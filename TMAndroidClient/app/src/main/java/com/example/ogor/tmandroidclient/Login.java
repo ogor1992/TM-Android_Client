@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        setTitle("Login");
+        setTitle("Mobile STT - Login");
 
         resultLabelFromReg = (TextView) findViewById(R.id.resultLabelFromReg);
         resultFromGSON = (TextView) findViewById(R.id.resultFromGSON);
@@ -58,31 +58,40 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         switch(v.getId()){
             case R.id.loginButton:
 
-                String user = usernameLabel.getText().toString();
                 progressBar.setVisibility(View.VISIBLE);
 
-                Rest_Api restApi = Rest_Api.retrofit.create(Rest_Api.class);
-                Call<List<String>> call = restApi.loginAct(usernameLabel.toString(), passwordLabel.toString());
-                try {
-                    String result1 = call.execute().body().toString();
-                    resultFromGSON.setText(result1);
-                } catch (IOException e) {
-                    e.printStackTrace();
+                //try {
+                   // Rest_Api restApi = Rest_Api.retrofit.create(Rest_Api.class);
+                   // Call<List<String>> call = restApi.loginAct(usernameLabel.toString(), passwordLabel.toString());
+
+                   // String result1 = call.execute().body().toString();
+                    //resultFromGSON.setText(result1);
+               // } catch (IOException e) {
+               //     e.printStackTrace();
+               // }
+
+                String user = usernameLabel.getText().toString();
+
+                if(user.contains("edu.p.lodz.pl") == true){
+                    Intent intentStudent = new Intent(this, Student_screen.class);
+                    startActivity(intentStudent);
+                    finish();
+                }else{
+                    Intent intentTeacher = new Intent(this, Teacher_screen.class);
+                    startActivity(intentTeacher);
+                    finish();
                 }
-
-
                 ////////////////////////////////////////////////////////////////////////////////////////
                 ///// SECTION BELOW WAS IN FIRST VERSION, NOW WE NEED TO MODIFY THIS SECTION ///////////
                 ////////////////////////////////////////////////////////////////////////////////////////
 
-                //Intent returnIntentLOG = new Intent();
-                //////////////////setResult(Activity.RESULT_CANCELED, returnIntent); //przypadek kiedy nie uda sie zalogowac :)
-               // setResult(Activity.RESULT_OK, returnIntentLOG);
-                //finish();
+
+                /// this is toast
                 CharSequence text = "Successfully log in!";
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+
                 break;
             case R.id.registerButton:
                 Intent intentREG = new Intent(this, Register.class);

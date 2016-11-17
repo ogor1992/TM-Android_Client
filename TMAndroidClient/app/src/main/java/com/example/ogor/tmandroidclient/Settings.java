@@ -14,7 +14,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        setTitle("Settings");
+        setTitle("Mobile STT - Settings");
 
         showDataButtonSettings = (Button) findViewById(R.id.showDataButtonSettings);
         editDataButtonSettings = (Button) findViewById(R.id.editDataButtonSettings);
@@ -32,14 +32,20 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
         switch(v.getId())
         {
             case R.id.showDataButtonSettings:
+                Intent intentSHOW = new Intent(this, ShowUserData.class);
+                startActivity(intentSHOW);
                 break;
             case R.id.editDataButtonSettings:
                 Intent intentEDIT = new Intent(this, EditUserData.class);
                 startActivityForResult(intentEDIT, 1);
                 break;
             case R.id.logoutButtonSettings:
+                Intent intentLOGOUT = new Intent(this, MainScreen.class);
+                startActivity(intentLOGOUT);
                 break;
             case R.id.infoButtonSettings:
+                Intent intentINFO = new Intent(this, Information.class);
+                startActivity(intentINFO);
                 break;
         }
     }
