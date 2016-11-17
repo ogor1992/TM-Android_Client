@@ -39,11 +39,12 @@ public class EditConsultation extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.saveConsultationButton:
 
-
+                finish();
                 CharSequence text = "Successfully saved changes!";
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+
                 break;
         }
     }

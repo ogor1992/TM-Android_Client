@@ -91,7 +91,8 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
                 startActivity(new Intent(this, Settings.class));
                 break;
             case R.id.action_logout:
-
+                Intent intentLogout = new Intent(this, MainScreen.class);
+                startActivity(intentLogout);
                 break;
         }
 

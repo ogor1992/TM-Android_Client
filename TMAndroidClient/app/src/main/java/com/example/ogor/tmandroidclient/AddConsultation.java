@@ -40,10 +40,12 @@ public class AddConsultation extends AppCompatActivity implements View.OnClickLi
             case R.id.addConsultationButton:
 
 
+                finish();
                 CharSequence text = "Successfully added!";
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+
                 break;
         }
     }
