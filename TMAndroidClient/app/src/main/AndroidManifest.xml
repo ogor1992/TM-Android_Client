@@ -34,7 +34,7 @@
         <activity android:name=".ListOfStudents" />
         <activity android:name=".SearchTeacher" />
         <activity android:name=".SearchConsultation" />
-        <activity android:name=".ShowConsultationStudent"></activity>
+        <activity android:name=".ShowConsultationStudent" />
     </application>
 
 </manifest>

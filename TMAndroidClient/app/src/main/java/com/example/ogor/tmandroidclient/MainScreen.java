@@ -2,6 +2,7 @@ package com.example.ogor.tmandroidclient;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -41,10 +46,26 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
         switch(v.getId())
         {
             case R.id.fab:
-                Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(v, "Report bug start...", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
 
+                Date cDate = new Date();
+                String fDate = new SimpleDateFormat("yyyy-MM-dd").format(cDate);
+
                         //Here we can handle right down corner button :D
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:" + "180153@edu.p.lodz.pl"));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "[Bug Report - Mobile STT]");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Report of bug on date: " + fDate + "Write explenation: ");
+
+                try {
+                    startActivity(Intent.createChooser(emailIntent, "Send email using..."));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(MainScreen.this, "No email clients installed.", Toast.LENGTH_SHORT).show();
+                }
+
+
+
                 break;
             case R.id.siginButton:
                 Intent intentLOG = new Intent(this, Login.class);
