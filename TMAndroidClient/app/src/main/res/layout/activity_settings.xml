@@ -9,67 +9,73 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ogor.tmandroidclient.Settings">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username:"
-        android:textSize="20dp"/>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/usernameLabelEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="180153"
-        android:layout_marginLeft="130dp"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Email:"
-        android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/usernameLabelEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180153"
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:id="@+id/emailLabelEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="180153@edu.p.lodz.pl"
-        android:layout_marginLeft="130dp"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Email:"
+                android:textSize="20dp"/>
 
-    <Button
-        android:id="@+id/showDataButtonSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show user data"
-        android:layout_marginTop="170dp"/>
+            <TextView
+                android:id="@+id/emailLabelEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="180153@edu.p.lodz.pl"
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
-    <Button
-        android:id="@+id/editDataButtonSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Edit user data"
-        android:layout_marginTop="230dp"/>
+            <Button
+                android:id="@+id/showDataButtonSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show user data"
+                android:layout_marginTop="170dp"/>
 
-    <Button
-        android:id="@+id/logoutButtonSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:layout_marginTop="290dp"/>
+            <Button
+                android:id="@+id/editDataButtonSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit user data"
+                android:layout_marginTop="230dp"/>
 
-    <Button
-        android:id="@+id/infoButtonSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="information"
+            <Button
+                android:id="@+id/logoutButtonSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="290dp"/>
 
-        android:layout_marginTop="390dp"/>
-
-
-
+            <Button
+                android:id="@+id/infoButtonSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="information"
+                android:layout_marginTop="390dp"/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

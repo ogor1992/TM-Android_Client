@@ -9,88 +9,94 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.example.ogor.tmandroidclient.AddConsultation">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add new consultation"
-        android:textStyle="bold"
-        android:layout_marginTop="0dp"
-        android:layout_gravity="center"
-        android:textSize="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new consultation"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:textSize="30dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name:"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/nameConsultationLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/nameConsultationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Day of week:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day of week:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/dateOfConsultationLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/dateOfConsultationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hour:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hour:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/hourConsultationLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/hourConsultationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Year:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/yearConsultationLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/yearConsultationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Duration:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/durationConsultationLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/durationConsultationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <Button
-        android:id="@+id/addConsultationButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ADD"/>
-
-
-
-
+            <Button
+                android:id="@+id/addConsultationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

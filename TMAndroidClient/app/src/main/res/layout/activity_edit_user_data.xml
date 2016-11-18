@@ -9,79 +9,88 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ogor.tmandroidclient.EditUserData">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username:"
-        android:textSize="20dp"/>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/usernameLabelEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="180153"
-        android:layout_marginLeft="130dp"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Email:"
-        android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/usernameLabelEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180153"
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:id="@+id/emailLabelEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="180153@edu.p.lodz.pl"
-        android:layout_marginLeft="130dp"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Email:"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:text="Data that you can edit::"
-        android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/emailLabelEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="180153@edu.p.lodz.pl"
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:text="Name:"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:text="Data that you can edit::"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/nameEditEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="115dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:text="Name:"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
-        android:text="Surname:"
-        android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/nameEditEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="115dp"/>
 
-    <EditText
-        android:id="@+id/surnameEditEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="155dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:text="Surname:"
+                android:textSize="20dp"/>
 
-    <Button
-        android:id="@+id/saveButtonEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:layout_marginTop="400dp"/>
+            <EditText
+                android:id="@+id/surnameEditEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="155dp"/>
 
+            <Button
+                android:id="@+id/saveButtonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="400dp"/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

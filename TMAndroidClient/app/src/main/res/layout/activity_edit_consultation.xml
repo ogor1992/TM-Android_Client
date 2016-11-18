@@ -10,87 +10,95 @@
     android:orientation="vertical"
     tools:context="com.example.ogor.tmandroidclient.EditConsultation">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit consultation"
-        android:textStyle="bold"
-        android:layout_marginTop="0dp"
-        android:layout_gravity="center"
-        android:textSize="30dp"/>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit consultation"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:textSize="30dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name:"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/nameConsultationLabel_S"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/nameConsultationLabel_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Day of week:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day of week:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/dateOfConsultationLabel_S"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/dateOfConsultationLabel_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hour:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hour:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/hourConsultationLabel_S"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/hourConsultationLabel_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Year:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/yearConsultationLabel_S"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/yearConsultationLabel_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Duration:"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/durationConsultationLabel_S"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/durationConsultationLabel_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
 
-    <Button
-        android:id="@+id/saveConsultationButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="save"/>
+            <Button
+                android:id="@+id/saveConsultationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="save"/>
 
-
-
-
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

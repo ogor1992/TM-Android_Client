@@ -12,41 +12,44 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.ogor.tmandroidclient.MainScreen"
     tools:showIn="@layout/activity_main_screen">
-    <ImageSwitcher
-        android:id="@+id/ImageSwitcher01"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="170dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/logo_pl">
-    </ImageSwitcher>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true">
-    </LinearLayout>
 
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/signInLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Need to Sign In"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp"/>
+            <ImageSwitcher
+                android:id="@+id/ImageSwitcher01"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo_pl">
+            </ImageSwitcher>
 
-    <Button
-        android:id="@+id/siginButton"
+            <TextView
+                android:id="@+id/signInLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need to Sign In"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"/>
 
-        android:text="Sign In"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/buttonshape"
-        />
-
+            <Button
+                android:id="@+id/siginButton"
+                android:text="Sign In"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/buttonshape" />
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -10,69 +10,79 @@
     android:orientation="vertical"
     tools:context="com.example.ogor.tmandroidclient.Information">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INFORMATION::"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textSize="30dp"/>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="App was created by:"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFORMATION::"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="30dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Igor Dudek"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center"
-        android:textSize="25dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lukasz Linka"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textSize="25dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Michal Tyminski"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textSize="25dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Andrian Wisniewski"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App was created by:"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" @all rights reserved"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Igor Dudek"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lukasz Linka"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Michal Tyminski"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Andrian Wisniewski"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Questions: support@costam.com"
-        android:textStyle="bold"
-        android:layout_marginTop="70dp"
-        android:layout_gravity="center"
-        android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" @all rights reserved"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Questions: support@costam.com"
+                android:textStyle="bold"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
